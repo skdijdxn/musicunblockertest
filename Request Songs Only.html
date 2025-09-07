@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="iwannakissJacern-modified.png" type="image">
+    <title>Jaces Unblocked Music | Request Songs Only</title>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="home.html">
+    <button title="Home" id="Home" class="divbutton"> Home </button> 
+  </a> 
+
+    <a href="home.html">
+    <button title="Go Back" id="Go Back" class="divbutton"> Go Back </button> 
+  </a> 
+  </div>
+
+  <div class="search">
+  <input tpye="search" autocomplete="off" 
+  id="search" class="search-games" placeholder="Jaces Music Unblocker | search music.." onkeypress="searchgames()">
+</div>
+
+
+<script> function searchgames() {
+  let input = document.getElementById('search').value
+  input = input.toLowerCase();
+  let x = document.getElementsByClassName("card");
+
+  for (i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.display = "none";
+    }
+    else {
+      x[i].style.display = "block";
+      }
+    }
+  }
+
+  document.getElementById('search').addEventListener("keydown", (e) => {
+    if (e.key == "Backspace") {
+        searchgames();
+    }
+  });
+</script>
+
+
+    <script>
+    document.addEventListener("keydown", 
+    async (e) => { if ("`" == e.key) window.parent.window.location.replace("https://google.com/") });
+    </script>
+
+
+<div class="centered">
+<div class="card" onclick="window.open('https://www.roblox.com/game-pass/1448889634/Donation-Small', '_self')">
+<img src="donation.png">Donation (Robux)</div>
+<div class="card" onclick="window.open('mailto:jacehawkins951@gmail.com', '_self')">
+<img src="gmail.png">Request A Song</div>
+<div class="card" onclick="window.open('/This Hurts.html', '_self')">
+<img src="This Hurts.png"><p>This Hurts</p></div>
+<div class="card" onclick="window.open('/The 30th.html', '_self')">
+<img src="The 30th.png"><p>The 30th</p></div>
+</div>
+
+</body>
+</html>
